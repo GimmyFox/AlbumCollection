@@ -206,5 +206,74 @@ class AlbumsViewController: UIViewController {
         }
         return UICollectionReusableView()
     }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
 
 }
+
+extension AlbumsViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+   
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 4
+    
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        var numberOfCells = 0
+        
+        if section == 0 {
+            numberOfCells = AlbumModel.firstSectionData.count
+        } else if section == 1 {
+            numberOfCells = AlbumModel.secondSectionData.count
+        } else if section == 2 {
+            numberOfCells = AlbumModel.thirdSectionData.count
+        } else {
+            numberOfCells = AlbumModel.fourthSectionData.count
+        }
+        return numberOfCells
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        if indexPath.section == 0 {
+            guard let cellOne = collectionView.dequeueReusableCell(withReuseIdentifier: MyAlbumCells.myAlbumCellId, for: indexPath) as? MyAlbumCells else {
+                return UICollectionViewCell ()
+                
+            }
+            cellOne.data = AlbumModel.firstSectionData[indexPath.row]
+            return cellOne
+        } else if indexPath.section == 1 {
+            
+            guard let cellTwo = collectionView.dequeueReusableCell(withReuseIdentifier: SharedCells.sharedCellId, for: indexPath) as? SharedCells else {
+                return UICollectionViewCell ()
+                }
+            cellTwo.data = AlbumModel.secondSectionData[indexPath.row]
+            return cellTwo
+        
+        } else if indexPath.section == 2 {
+            guard let cellThree = collectionView.dequeueReusableCell(withReuseIdentifier: MediafilesCells.mediafilesCellId, for: indexPath) as? MediafilesCells else {
+                return UICollectionViewCell ()
+                
+            }
+            cellThree.data = AlbumModel.thirdSectionData[indexPath.row]
+            return cellThree
+        } else {
+            guard let cellFour = collectionView.dequeueReusableCell(withReuseIdentifier: OtherALbumCells.otherAlbumCellId, for: indexPath) as? OtherALbumCells else {
+                return UICollectionViewCell ()
+                
+            }
+            cellFour.data = AlbumModel.fourthSectionData[indexPath.row]
+            return cellFour
+        }
+        
+    }
+    
+}
+

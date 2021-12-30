@@ -20,6 +20,11 @@
 		97FC02EB277E3F35003A2BA3 /* MediatekaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC02EA277E3F35003A2BA3 /* MediatekaViewController.swift */; };
 		97FC02ED277E3F4A003A2BA3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC02EC277E3F4A003A2BA3 /* SearchViewController.swift */; };
 		97FC02F3277E434D003A2BA3 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC02F2277E434D003A2BA3 /* SectionHeader.swift */; };
+		97FC02F5277E4428003A2BA3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC02F4277E4428003A2BA3 /* Model.swift */; };
+		97FC02F8277E44BF003A2BA3 /* MyAlbumCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC02F7277E44BF003A2BA3 /* MyAlbumCells.swift */; };
+		97FC02FA277E44CF003A2BA3 /* SharedCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC02F9277E44CF003A2BA3 /* SharedCells.swift */; };
+		97FC02FC277E44EA003A2BA3 /* MediafilesCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC02FB277E44EA003A2BA3 /* MediafilesCells.swift */; };
+		97FC02FE277E4504003A2BA3 /* OtherAlbumCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC02FD277E4504003A2BA3 /* OtherAlbumCells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		97FC02EA277E3F35003A2BA3 /* MediatekaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatekaViewController.swift; sourceTree = "<group>"; };
 		97FC02EC277E3F4A003A2BA3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		97FC02F2277E434D003A2BA3 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		97FC02F4277E4428003A2BA3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		97FC02F7277E44BF003A2BA3 /* MyAlbumCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlbumCells.swift; sourceTree = "<group>"; };
+		97FC02F9277E44CF003A2BA3 /* SharedCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCells.swift; sourceTree = "<group>"; };
+		97FC02FB277E44EA003A2BA3 /* MediafilesCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediafilesCells.swift; sourceTree = "<group>"; };
+		97FC02FD277E4504003A2BA3 /* OtherAlbumCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherAlbumCells.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +159,7 @@
 		97FC02EE277E3F82003A2BA3 /* Albums */ = {
 			isa = PBXGroup;
 			children = (
+				97FC02F6277E44A5003A2BA3 /* Cells */,
 				97FC02F1277E4338003A2BA3 /* General */,
 				97FC02E6277E3EEF003A2BA3 /* AlbumsViewController.swift */,
 			);
@@ -175,8 +186,20 @@
 			isa = PBXGroup;
 			children = (
 				97FC02F2277E434D003A2BA3 /* SectionHeader.swift */,
+				97FC02F4277E4428003A2BA3 /* Model.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		97FC02F6277E44A5003A2BA3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				97FC02F7277E44BF003A2BA3 /* MyAlbumCells.swift */,
+				97FC02F9277E44CF003A2BA3 /* SharedCells.swift */,
+				97FC02FB277E44EA003A2BA3 /* MediafilesCells.swift */,
+				97FC02FD277E4504003A2BA3 /* OtherAlbumCells.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,11 +335,16 @@
 			files = (
 				97FC02E7277E3EEF003A2BA3 /* AlbumsViewController.swift in Sources */,
 				97FC02ED277E3F4A003A2BA3 /* SearchViewController.swift in Sources */,
+				97FC02FE277E4504003A2BA3 /* OtherAlbumCells.swift in Sources */,
 				97FC02BA277E3027003A2BA3 /* ViewController.swift in Sources */,
+				97FC02F8277E44BF003A2BA3 /* MyAlbumCells.swift in Sources */,
+				97FC02FA277E44CF003A2BA3 /* SharedCells.swift in Sources */,
 				97FC02F3277E434D003A2BA3 /* SectionHeader.swift in Sources */,
+				97FC02FC277E44EA003A2BA3 /* MediafilesCells.swift in Sources */,
 				97FC02EB277E3F35003A2BA3 /* MediatekaViewController.swift in Sources */,
 				97FC02B6277E3027003A2BA3 /* AppDelegate.swift in Sources */,
 				97FC02E9277E3F26003A2BA3 /* ForYouViewController.swift in Sources */,
+				97FC02F5277E4428003A2BA3 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
