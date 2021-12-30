@@ -26,7 +26,18 @@ class AlbumsViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Альбомы"
         
+        collectionView.register(MyAlbumCells.self, forCellWithReuseIdentifier: MyAlbumCells.myAlbumCellId)
+        collectionView.register(SharedCells.self, forCellWithReuseIdentifier: SharedCells.sharedCellId)
+        collectionView.register(MediafilesCells.self, forCellWithReuseIdentifier: MediafilesCells.mediafilesCellId)
+        collectionView.register(OtherALbumCells.self, forCellWithReuseIdentifier: OtherALbumCells.otherAlbumCellId)
+        
+        collectionView.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeader.indentifier)
         setupView()
+        setupHierarchy()
+        setupLayout()
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
     
     private func setupView() {
