@@ -19,6 +19,7 @@
 		97FC02E9277E3F26003A2BA3 /* ForYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC02E8277E3F26003A2BA3 /* ForYouViewController.swift */; };
 		97FC02EB277E3F35003A2BA3 /* MediatekaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC02EA277E3F35003A2BA3 /* MediatekaViewController.swift */; };
 		97FC02ED277E3F4A003A2BA3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC02EC277E3F4A003A2BA3 /* SearchViewController.swift */; };
+		97FC02F3277E434D003A2BA3 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FC02F2277E434D003A2BA3 /* SectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		97FC02E8277E3F26003A2BA3 /* ForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouViewController.swift; sourceTree = "<group>"; };
 		97FC02EA277E3F35003A2BA3 /* MediatekaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatekaViewController.swift; sourceTree = "<group>"; };
 		97FC02EC277E3F4A003A2BA3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		97FC02F2277E434D003A2BA3 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		97FC02EE277E3F82003A2BA3 /* Albums */ = {
 			isa = PBXGroup;
 			children = (
+				97FC02F1277E4338003A2BA3 /* General */,
 				97FC02E6277E3EEF003A2BA3 /* AlbumsViewController.swift */,
 			);
 			path = Albums;
@@ -166,6 +169,14 @@
 				97FC02EC277E3F4A003A2BA3 /* SearchViewController.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		97FC02F1277E4338003A2BA3 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				97FC02F2277E434D003A2BA3 /* SectionHeader.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +313,7 @@
 				97FC02E7277E3EEF003A2BA3 /* AlbumsViewController.swift in Sources */,
 				97FC02ED277E3F4A003A2BA3 /* SearchViewController.swift in Sources */,
 				97FC02BA277E3027003A2BA3 /* ViewController.swift in Sources */,
+				97FC02F3277E434D003A2BA3 /* SectionHeader.swift in Sources */,
 				97FC02EB277E3F35003A2BA3 /* MediatekaViewController.swift in Sources */,
 				97FC02B6277E3027003A2BA3 /* AppDelegate.swift in Sources */,
 				97FC02E9277E3F26003A2BA3 /* ForYouViewController.swift in Sources */,
